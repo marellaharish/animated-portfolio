@@ -1,0 +1,71 @@
+.description {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+    .body {
+        max-width: 1400px;
+        display: flex;
+        gap: 120px;
+        position: relative;
+
+        p {
+            margin: 0px;
+
+            &:nth-of-type(1) {
+                font-size: 36px;
+                gap: 10px;
+                line-height: 1.7;
+                font-weight: 450;
+
+                span {
+                    margin-right: 3px;
+                }
+
+                .mask {
+                    position: relative;
+                    overflow: hidden;
+                    display: inline-flex;
+                }
+            }
+
+            &:nth-of-type(2) {
+                font-size: 20px;
+                width: 60%;
+                font-weight: 300;
+                margin-right: 25px;
+            }
+        }
+
+        .button {
+            top: 120%;
+            left: calc(100% - 400px);
+            width: 180px;
+            height: 180px;
+            background-color: #1C1D20;
+            color: white;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            p {
+                margin: 0px;
+                font-size: 16px;
+                font-weight: 300;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    .moreWork {
+        padding: 20px;
+        border-radius: 40px;
+        border: 1px solid grey;
+    }
+}
