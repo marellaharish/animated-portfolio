@@ -3,7 +3,7 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
-export default function ndex() {
+export default function Index() {
 
     const phrase = "Empowering brands to shine in the digital age. We're here to redefine the rules and keep you at the forefront. No frills, always leading the way.";
     const description = useRef(null);
@@ -18,7 +18,7 @@ export default function ndex() {
                         })
                     }
                 </p>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>"My unwavering dedication to design, coding, and interaction places me in a distinctive realm within the web design universe. This fusion of passions sets me apart in the digital world."</motion.p>
+                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>&quot; My unwavering dedication to design, coding, and interaction places me in a distinctive realm within the web design universe. This fusion of passions sets me apart in the digital world.&quot;</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <Rounded className={styles.button}>
                         <p>About me</p>
