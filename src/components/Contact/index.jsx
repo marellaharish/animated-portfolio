@@ -14,6 +14,21 @@ export default function Index() {
     const x = useTransform(scrollYProgress, [0, 1], [0, 100])
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+    const handleContact = () => {
+
+        const recipient = 'marellaharish9@gmail.com';
+        const subject = 'Contact Form Submission';
+
+        const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}`;
+        window.open(mailtoLink, '_blank');
+    };
+
+    const handleCall = () => {
+        const phoneNumber = "9848173866";
+        window.location.href = `tel:${phoneNumber}`;
+    };
+
+
     return (
         <motion.div style={{ y }} ref={container} className={styles.contact}>
             <div className={styles.body}>
@@ -39,10 +54,10 @@ export default function Index() {
                     </motion.svg>
                 </div>
                 <div className={styles.nav}>
-                    <Rounded>
+                    <Rounded onClick={handleContact}>
                         <p>marellaharish9@gmail.com</p>
                     </Rounded>
-                    <Rounded>
+                    <Rounded onClick={handleCall}>
                         <p>+91 9848173866</p>
                     </Rounded>
                 </div>
