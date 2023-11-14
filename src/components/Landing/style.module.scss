@@ -13,6 +13,27 @@
     top: calc(100vh - 350px);
   }
 
+  .hanger {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: auto;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    span {
+      display: block;
+      margin: auto;
+      color: #fff;
+      margin-left: 25px;
+    }
+  }
+
   .slider {
     position: relative;
     white-space: nowrap;

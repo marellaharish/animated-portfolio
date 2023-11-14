@@ -50,7 +50,18 @@ export default function Home() {
         fill={true}
         alt="background"
       />
+
+
       <div className={styles.sliderContainer}>
+        <img src="/images/hanger.svg" className={styles.hanger} />
+        <div class={styles.hanger}>
+          <p>
+            <span>Located </span>
+            <span>in the </span>
+            <span>Hyderabad</span>
+          </p>
+
+        </div>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Developer Harish -</p>
           <p ref={secondText}>Developer Harish -</p>
